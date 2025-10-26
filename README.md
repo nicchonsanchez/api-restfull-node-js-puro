@@ -14,7 +14,8 @@ Projeto desenvolvido para demonstrar o domínio dos **fundamentos do Node.js**, 
 ## ✨ Destaques da Arquitetura
 
 * **Roteamento Customizado:** Implementação de um sistema de roteamento manual (`server.js`) que lida com o *matching* de rotas dinâmicas.
-* **Parser de URL:** Utilização de **Expressões Regulares** (`build-route-path.js`) para extrair e nomear de forma limpa os parâmetros de rota e *query strings*.
+* **Parser de URL e Query:** Utilização de **Expressões Regulares** (`build-route-path.js`) para extrair e nomear de forma limpa os parâmetros de rota e *query strings*.
+* **Middleware de Payload:** Construção manual de um **middleware** (`middlewares/json.js`) responsável por ler o *stream* da requisição e converter o *payload* do corpo (body) para JSON. 👈 **(NOVO)**
 * **Persistência de Dados (CRUD):** Uso do módulo `node:fs/promises` para simular uma base de dados, salvando e manipulando os registros em um arquivo JSON (`db.json`).
 * **Princípios RESTful:** Conformidade com os métodos HTTP para as operações **CRUD** (`Create`, `Read`, `Update`, `Delete`).
 
